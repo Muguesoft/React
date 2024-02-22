@@ -1,0 +1,62 @@
+.itemdetail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    border-radius: 5%;
+    background-color: beige;
+}
+
+.itemdetail_tit {
+    font-family:"Kanit", sans-serif;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.itemdetail_subtit{
+    font-size: 2rem;
+    font-family:"Kanit", sans-serif;
+    padding: 10px;
+}
+.precioboton{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.precio{
+    margin: 20px;
+}
+
+.boton{
+    border-style: solid;
+    border-color:cadetblue;
+    border-radius: 5px;
+    font-family:"Kanit", sans-serif;
+    margin: 20px;
+    padding: 10px;
+}
+
+.itemdetail_imagen {
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.itemdetail_tam_prec{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.contador_y_volver{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -1,0 +1,42 @@
+.item {
+    margin: 20px;
+    border-radius: 5%;
+    background-color: beige;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    max-width: 30%;
+}
+
+
+.titulo {
+    font-family:"Kanit", sans-serif;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+.precioboton{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.precio{
+    margin: 20px;
+}
+
+.boton{
+    border-style: solid;
+    border-color:cadetblue;
+    border-radius: 5px;
+    font-family:"Kanit", sans-serif;
+    margin: 20px;
+    padding: 10px;
+}
+
+.imagen {
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 350px;
+}
