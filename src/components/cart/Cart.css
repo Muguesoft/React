@@ -1,0 +1,44 @@
+.total_carrito{
+    display: flex;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: beige;
+    flex-direction: row;
+    justify-content: space-between ;
+    text-align: center;
+    align-items: center;
+}
+
+.boton_link{
+    border-style: solid;
+    border-color:cadetblue;
+    border-radius: 5px;
+    font-family:"Kanit", sans-serif;
+    margin: 20px;
+    padding: 10px;
+}
+
+.vacio_link{
+    display: flex;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: beige;
+    flex-direction: row;
+    justify-content: space-between ;
+    text-align: center;
+    align-items: center;
+}
+
+.texto_total_fotos{
+    font-size: 1.4rem;
+    font-family: "Kanit", sans-serif;
+    margin-left: 15px;
+}
+
+.titulo_carrito{
+    text-align: center;
+}
+
+.titulo_carrito_vacio{
+    margin-left: 15px;
+}

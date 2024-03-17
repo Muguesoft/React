@@ -1,3 +1,15 @@
+/////////////////////////////////////////////////////////////////////////////////////////////////
+// Este proyecto es el mismo proyecto que se desarrolló en el curso de desarrollo web,         //
+// luego en el curso de JavaScript y ahora React.                                              //
+// Por mi afición a la fotografía, simula ser una web de venta de impresiones de fotografías   //
+// donde se pueden seleccionar distintas fotografías según la categoría y solicitar la         //
+// impresión de distintas cantidades de copias para cada fotografía. Es por ser esta modalidad //
+// de web donde se realizarían impresiones de distintas fotografías que no se controla stock.  //
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

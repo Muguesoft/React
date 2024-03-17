@@ -1,10 +1,20 @@
 import ItemCounter from "../ItemCounter/ItemCounter";
 import { Link } from "react-router-dom";
 import "./ItemDetail.css"
+import { useContext, useState } from "react";
+import { CartContext } from "../../context/CartContext"; 
+
 
 const ItemDetail = ({fotos}) => {
+
+    const {sumarImpresion} = useContext(CartContext)
+
+    const [cantidadAgregada, setCantidadAgregada] = useState(0);
+
     const handleCantidad = (cantidad) => {
-    alert('Cantidad agregada'+cantidad)
+        setCantidadAgregada(cantidad);
+
+        sumarImpresion(fotos, cantidad)
     }
 
     return (
@@ -17,11 +27,19 @@ const ItemDetail = ({fotos}) => {
                 <p>Precio: ${fotos.precio}</p>
             </div>
             <div className="contador_y_volver">
-                <ItemCounter seleccionadas={1} agregar={handleCantidad}></ItemCounter>
-                <Link to={`/`} className="boton">Volver</Link>
+                {
+                    cantidadAgregada > 0 ? (
+                        <Link to={`/carrito`} className="boton">Terminar Selección</Link>
+                     ) : (
+                        <ItemCounter seleccionadas={1} agregar={handleCantidad}></ItemCounter>        
+                        )
+                }
+                
+                <Link to={`/`} className="boton">Continuar Selección</Link>
             </div>
         </article>
     )
 }
+
 
 export default ItemDetail;
